@@ -142,26 +142,11 @@ class DelPerf:
 	def __init__(self, perent):
 		self.root4 = tk.Toplevel(perent)
 		self.root4.title('Удалить выполненные задачи')
-		self.root4.geometry("350x250")
+		self.root4.geometry("300x250")
 		self.root4.resizable(False, False)
 
-		Label(self.root4, text = 'Вы уверены?').place(relx=.4, rely=.1)
-		btn_yes = tk.Button(self.root4,
-							 	text = "Да",
-							 	width = 3,
-							 	height = 1,
-							 	command = lambda:self.root4.destroy(),
-							 	bg = "Green",
-							 	bd=3)
-		btn_yes.place(relx = .3, rely = .4)
-		btn_no = tk.Button(self.root4,
-							 	text = "Нет",
-							 	width = 3,
-							 	height = 1,
-							 	command = lambda:self.root4.destroy(),
-							 	bg = "Green",
-							 	bd=3)
-		btn_no.place(relx = .6, rely = .4)
+		Label(self.root4, text = 'Вы уверены?').place(relx=.2, rely=.1)
+        
 		self.focuse()
 
 	def focuse(self):
